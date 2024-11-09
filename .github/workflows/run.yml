@@ -19,6 +19,8 @@ jobs:
 
       - uses: actions/setup-node@v4
 
+      - run: npm install -g ts-node
+
       - run: npm install
 
       - run: ./run.sh
