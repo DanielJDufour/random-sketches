@@ -2,7 +2,7 @@
 
 ct=0;
 
-for i in $(seq 1 10000);
+for i in $(seq 1 10);
 do
   for numPolygons in $(seq 1 10);
   do
@@ -10,6 +10,7 @@ do
     ./node_modules/@seasketch/geoprocessing/dist/base-project/scripts/genRandomFeature.ts $numPolygons "sketch$ct" "$PWD/";
     zip -u sketches.zip ./sketch*.json;
     rm ./sketch*.json;
+    ls -alsh sketches.zip;
   done
 done
 
