@@ -1,4 +1,7 @@
 {
   "name": "random-sketches",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@seasketch/geoprocessing": "^6.1.2"
+  }
 }
